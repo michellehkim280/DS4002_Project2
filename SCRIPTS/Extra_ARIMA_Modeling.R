@@ -1,5 +1,4 @@
-# The code below is more ARIMA modeling so that we can create a graph that looks at and forecasts
-# for just Vaccination Coverage Percentage 
+# The code below is more ARIMA modeling so that we can create a graph that looks at and forecasts for just Vaccination Coverage Percentage 
 
 # Loading libraries 
 library(forecast)
