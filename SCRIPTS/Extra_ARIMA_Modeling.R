@@ -29,8 +29,8 @@ time_series_data <- ts(df_cleaned$Estimate, start = c(start_year, 1), frequency 
 model <- auto.arima(time_series_data)
 print(model)
 
-# Forecast future vaccination coverage for the next 10 months 
-forecast_data <- forecast(model, 10)
+# Forecast future vaccination coverage for the next 24 months 
+forecast_data <- forecast(model, 24)
 print(forecast_data)
 
 # Fixing so that X-axis is years 
