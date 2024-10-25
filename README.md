@@ -17,5 +17,11 @@
 ### 3) OUTPUT - This folder includes the output of our analysis, including charts and graphs to support or oppose our hypothesis.
 - Initial EDA.pdf: Includes graphs outlining vaccination coverage over time from Vaccination_and_cases.csv.
 ## Reproducing Results
+#### 1) Download both COVID-19_Case_Surveillance_Public_Use_Data_with_Geography_20241017.csv and Influenza_Vaccination_Coverage_for_All_Ages__6__Months__20241016 (3).csv.
+#### 2) Combind datasets with same Date column in Excel, or download Vaccination_and_cases.csv for cleaned combined dataset.
+#### 3) 
+#### 4)
+#### 5)
+#### 6)
 
 
