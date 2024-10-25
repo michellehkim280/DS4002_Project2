@@ -16,6 +16,7 @@
 - Vaccination_and_cases.csv: Cleaned dataset containing both COVID-19 case count data and Influenza vaccinaiton coverage data over time.
 ### 3) OUTPUT - This folder includes the output of our analysis, including charts and graphs to support or oppose our hypothesis.
 - Initial EDA.pdf: Includes graphs outlining vaccination coverage over time from Vaccination_and_cases.csv.
+- Output.pdf: This file includes graphs collected through ARIMA model analysis and future forecasting of influenza vaccination coverage from ARIMA_modeling.R file.
 
 ## Reproducing Results
 #### 1) Download both COVID-19_Case_Surveillance_Public_Use_Data_with_Geography_20241017.csv and Influenza_Vaccination_Coverage_for_All_Ages__6__Months__20241016 (3).csv.
