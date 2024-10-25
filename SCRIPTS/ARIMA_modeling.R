@@ -59,7 +59,7 @@ class(clean_covid$date)
 ### PLOT INFLUENZA VACCINE COVERAGE OVER TIME ###
 
 # Merge the datasets on the 'date' column
-combined_data <- merge(clean_flu, clean_covid, by = "date", all = TRUE)
+clean_combined <- merge(clean_flu, clean_covid, by = "date", all = TRUE)
 
 # Plot the data using ggplot2
 ggplot(clean_combined, aes(x = as.Date(date))) +
@@ -93,8 +93,8 @@ forecasted_data_covid <- forecast(model_covid, h = 36)
 
 # Create forecast data frames
 forecast_dates <- seq(from = max(clean_flu$date) + 1/12, by = 1/12, length.out = 36)
-forecasted_data_flu <- data.frame(date = forecast_dates, estimate = as.numeric(forecasted_values_flu$mean))
-forecasted_data_covid <- data.frame(date = forecast_dates, covid = as.numeric(forecasted_values_covid$mean))
+forecasted_data_flu <- data.frame(date = forecast_dates, estimate = as.numeric(forecasted_data_flu$mean))
+forecasted_data_covid <- data.frame(date = forecast_dates, covid = as.numeric(forecasted_data_covid$mean))
 
 # Combine actual and forecasted data
 combined_flu <- rbind(clean_flu, forecasted_data_flu)
@@ -128,7 +128,7 @@ ggplot(forecasted_data_flu, aes(x=date, y=estimate))+geom_line(color="blue")+
 
 #Covid forecasted values
 ggplot(forecasted_data_covid, aes(x=date, y=covid))+geom_line(color="red")+
-  labs(x="Date", y="Projected Covid Cases", title="Forecasting of Covid Cases")
+  labs(x="Date", y="Projected Covid Cases", title="Forecasting of COVID-19 Cases")
 
 # PART 2 ----------------------------------------------------------------
 # COVID-19 cases reached a maximum of 419,355 in the US in Jan 2022.
