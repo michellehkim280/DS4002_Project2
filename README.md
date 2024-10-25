@@ -2,9 +2,9 @@
 
 ## Software and Platform
 ### Coding for this project was done in both R studio and Python.
-- R Packages:
-- Python Packages:
-- Done in both Windows and Mac.
+- R Packages: dplyr, ggplot2, zoo, forecast
+- Python Packages: pandas, matplotlib.pyplot, scipy
+- Performed in both Windows and Mac.
 
 ## Documentation Map
 ### 1) SCRIPTS - This folder includes our source code for the project with detailed comments outlining the actions being taken to clean and analyze the dataset.
