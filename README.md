@@ -20,7 +20,7 @@
 
 ## Reproducing Results
 #### 1) Download both COVID-19_Case_Surveillance_Public_Use_Data_with_Geography_20241017.csv and Influenza_Vaccination_Coverage_for_All_Ages__6__Months__20241016 (3).csv.
-#### 2) Combine datasets with same Date column in Excel, or download Vaccination_and_cases.csv for cleaned combined dataset.
+#### 2) Combine datasets with same Date column in Excel, or download Vaccination_and_cases.csv for cleaned combined dataset. When creating the final dataset with the two intial datasets, we first filtered into just Virginia of the "Geography" column of the Influenza Vaccaination Coverage dataset and then combined the "Season/Survey Year" and "Month" columns into a single column with a concatenation formula. Next, we removed all columns except for Estimate (%), 95% CI (%), Sample Size, and the new Data column. Lastly, we copied over the "Cases" column from the second dataset of COVID-19 Cases and added it in as a new column in the final dataset.
 #### 3) Run Initial_EDA.ipynb to perform Exploratory Data Analysis and produce graphs to be saved in Initial EDA.pdf, additionally, save statistical analysis output.
 #### 4) Run ARIMA_modeling.R to perform analysis on both COVID-19 case data and influenza vaccination coverage data to produce forecasted projections for influenza vaccination coverage.
 #### 5) Save forecasting graphs from ARIMA_modeling.R into Outputs.pdf file.
